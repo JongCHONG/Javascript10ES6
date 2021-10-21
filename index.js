@@ -23,8 +23,8 @@ const arr2 = ['X', 'Y', 'Z']
 let tab_concatener = arr1
 
 arr2.forEach(element => {
-    tab_concatener = [...tab_concatener, element]
-    tab_concatener = tab_concatener
+    let temp = [...tab_concatener, element]
+    tab_concatener = temp
 })
 console.log(tab_concatener)
 
