@@ -63,5 +63,3 @@ numbers.forEach(element => {
 saut2ligne()
 
 //6 - filter
-
-const numbers = [1, 2, 3, 4, 5, 6]
