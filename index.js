@@ -1,3 +1,7 @@
+function saut2ligne() {
+    console.log("")
+}
+
 const fruits = ['Apple','Orange','Banana']
 
 //1 - Push sans push
@@ -10,7 +14,7 @@ console.log(fruits_fin)
 let debut_fruits = ['Raspberry', ...fruits]
 console.log(debut_fruits)
 
-console.log("");
+saut2ligne()
 
 //3 - Array concatenation
 
@@ -23,6 +27,8 @@ arr2.forEach(element => {
     tab_concatener = tab_concatener
 })
 console.log(tab_concatener)
+
+saut2ligne()
 
 //4 - Objects
 
@@ -42,5 +48,20 @@ const user = {
 const bobby = {
     ...user, firstName: "bobby"
 }
-
 console.log(bobby)
+
+saut2ligne()
+
+//5 - forEach
+
+const numbers = [1, 2, 3, 4, 5, 6]
+
+numbers.forEach(element => {
+    console.log(element)
+})
+
+saut2ligne()
+
+//6 - filter
+
+const numbers = [1, 2, 3, 4, 5, 6]
