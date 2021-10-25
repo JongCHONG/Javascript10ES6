@@ -20,12 +20,13 @@ saut2ligne()
 
 const arr1 = ['A', 'B', 'C']
 const arr2 = ['X', 'Y', 'Z']
-let tab_concatener = arr1
+const tab_concatener = [...arr1, ...arr2]
+// let tab_concatener = arr1
 
-arr2.forEach(element => {
-    let temp = [...tab_concatener, element]
-    tab_concatener = temp
-})
+// arr2.forEach(element => {
+//     let temp = [...tab_concatener, element]
+//     tab_concatener = temp
+// })
 console.log(tab_concatener)
 
 saut2ligne()
@@ -63,3 +64,16 @@ numbers.forEach(element => {
 saut2ligne()
 
 //6 - filter
+
+let array_filter_numbers = numbers.filter(element => {
+    return element % 2 !== 0
+})
+console.log(array_filter_numbers)
+
+saut2ligne()
+
+//7 - map
+let array_map_numbers = numbers.map(element => {
+    return element * element
+})
+console.log(array_map_numbers)
